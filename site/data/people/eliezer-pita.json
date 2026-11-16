@@ -1,0 +1,61 @@
+{
+  "slug": "eliezer-pita",
+  "photo": "people/eliezer-pita-cutout.png",
+  "home_photo": "people/eliezer-pita-cutout.png",
+  "links": {
+    "orcid": "https://orcid.org/0009-0004-8380-3198",
+    "scholar": "https://scholar.google.es/citations?user=kuYj8zoAAAAJ&hl=es&oi=ao",
+    "github": "https://github.com/epita95",
+    "linkedin": "https://www.linkedin.com/in/eliezer-pita/",
+    "email": "eliezerpita@correo.ugr.es"
+  },
+  "languages": {
+    "en": {
+      "name": "Eliezer Pita Zambrano",
+      "role": "PhD researcher",
+      "home_role": "PhD student",
+      "appointments": [
+        {
+          "position": "Student",
+          "affiliations": [
+            "Department of Statistics and Operations Research, University of Granada"
+          ]
+        }
+      ],
+      "bio": [
+        "He is a data scientist and PhD student in Mathematical and Applied Statistics at the University of Granada. He holds a degree in Mechanical Engineering and studied for a master’s degree in Mathematical Engineering at the Technological University of Panama.",
+        "During his master’s studies, he investigated patient adherence to clinical trials using sequence mining, identifying behavioral patterns associated with participants’ continuation and dropout.",
+        "In Panama, he has collaborated on studies of chronic kidney disease prevalence and participates in research on polycystic kidney disease and breast cancer, analysing information from radiology reports.",
+        "His doctoral research focuses on causal inference and conformal inference, with a particular interest in uncertainty quantification when using machine learning models or small samples. His project is supervised by <a href=\"../miguel-luque/index.html\">Miguel Ángel Luque Fernández</a>."
+      ],
+      "research_areas": [
+        "conformal-inference"
+      ]
+    },
+    "es": {
+      "name": "Eliezer Pita Zambrano",
+      "role": "Investigador doctoral",
+      "home_role": "Estudiante de doctorado",
+      "appointments": [
+        {
+          "position": "Estudiante",
+          "affiliations": [
+            "Departamento de Estadística e Investigación Operativa, Universidad de Granada"
+          ]
+        }
+      ],
+      "bio": [
+        "Es científico de datos y estudiante de doctorado en Estadística Matemática y Aplicada en la Universidad de Granada. Es licenciado en Ingeniería Mecánica y cursó la maestría en Ingeniería Matemática en la Universidad Tecnológica de Panamá.",
+        "Durante su formación de maestría estudió la adherencia de pacientes a ensayos clínicos mediante minería de secuencias, identificando patrones de comportamiento relacionados con la continuidad y el abandono de los participantes.",
+        "En Panamá, ha colaborado en estudios sobre la prevalencia de la enfermedad renal crónica y participa en investigaciones sobre enfermedad renal poliquística y cáncer de mama, mediante el análisis de información procedente de informes de radiología.",
+        "Su investigación doctoral se centra en la inferencia causal y la inferencia conforme, con especial interés en la cuantificación de la incertidumbre cuando se utilizan modelos de aprendizaje automático o muestras pequeñas. Su proyecto está dirigido por <a href=\"../miguel-luque/index.html\">Miguel Ángel Luque Fernández</a>."
+      ],
+      "research_areas": [
+        "conformal-inference"
+      ]
+    }
+  },
+  "order": 2,
+  "given_name": "Eliezer",
+  "family_name": "Pita Zambrano"
+}

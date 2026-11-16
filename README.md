@@ -1,89 +1,33 @@
-# CausalityMluquefeLab
+# CausalityLab
 
-Website for the causality research group led by Miguel Ángel Luque Fernández
-(Department of Statistics and Operations Research, University of Granada),
-built to promote the work of its PhD students.
+Sitio web del grupo de investigación CausalityLab de la Universidad de Granada, dedicado a la inferencia causal, la bioestadística y la epidemiología computacional.
 
-**Status: scaffold.** The site renders, but most content is marked
-`TODO` and must be filled in by the people concerned. Nothing here is
-invented.
+El grupo desarrolla y estudia métodos para estimar efectos causales a partir de datos observacionales, con aplicaciones en epidemiología y salud poblacional. Su actividad combina investigación metodológica, formación y desarrollo de software de código abierto.
 
-## Build
+[Visitar la web en inglés](https://migariane.github.io/CausalityMluquefeLab/) · [Visitar la web en español](https://migariane.github.io/CausalityMluquefeLab/es/)
 
-The site is **bilingual**: English at `/`, Spanish at `/es/`. Build both
-with the script, which renders each language and assembles them into one
-`_site/` tree:
+## Líneas de investigación
 
-```bash
-./build.sh
-```
+- **Tratamientos complejos:** estimación de efectos causales de tratamientos con múltiples niveles y exposiciones complejas.
+- **Targeted learning:** métodos que combinan aprendizaje estadístico, estimación causal y teoría de eficiencia semiparamétrica.
+- **Inferencia conformal:** cuantificación de la incertidumbre en preguntas causales, incluidos escenarios con aprendizaje automático o muestras pequeñas.
+- **Salud poblacional:** métodos epidemiológicos para estudiar resultados de salud y desigualdades, con aplicaciones en cáncer y supervivencia.
 
-Preview locally with live reload (English only; run it again inside
-`es/` for the Spanish version):
+## Contenido del sitio
 
-```bash
-PATH="/usr/local/bin:$PATH" quarto preview
-```
+La web reúne las líneas de investigación y los perfiles del equipo, junto con publicaciones científicas, charlas, libros de acceso abierto, materiales docentes, paquetes de R y Stata y aplicaciones interactivas. También ofrece información de contacto para consultas sobre investigación, colaboración y formación doctoral.
 
-Output goes to `_site/` (git-ignored).
+El contenido está disponible en inglés y español.
 
-## Adding a PhD student
+## Acerca del repositorio
 
-Each student gets one directory under `students/`, named
-`firstname-lastname`, containing an `index.qmd` and a `photo.jpg`:
+Este repositorio contiene el código fuente, los contenidos y los recursos del sitio web. Está desarrollado con Quarto, HTML, CSS y JavaScript. Los contenidos incluyen páginas en formato `.qmd`, datos estructurados en JSON y plantillas compartidas para los perfiles del equipo.
 
-```
-students/
-├── index.qmd                  # listing page, generated from metadata
-├── a-student/
-│   ├── index.qmd
-│   └── photo.jpg
-└── another-student/
-    ├── index.qmd
-    └── photo.jpg
-```
+## Créditos
 
-Copy `templates/student.qmd.txt` to `students/<name>/index.qmd` to start. The `students/index.qmd` listing and
-the nav menu read from these files, so adding a directory is enough — no
-other file needs editing.
+- Marca de la Universidad de Granada y logo CollideR: fuentes documentadas en los archivos `.source.md` de `site/assets/`.
+- Logo de R: © 2016 The R Foundation, bajo licencia [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). [Fuente](https://www.r-project.org/logo/).
+- Cartografía: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
+- Referencia fotográfica de la Facultad de Medicina: Cruz y Ortiz Arquitectos.
 
-## Adding a publication
-
-Append a row to `publications/index.qmd`. Group by year, newest first.
-Use the student's full name exactly as on their own page so the two agree.
-
-## Conventions
-
-- Spanish is the site language for the course material elsewhere in this
-  repo, but **this site is in English** so students' work reaches an
-  international audience. Say so if you want Spanish or bilingual.
-- Numbers, DOIs, and author lists are copied from the source, never
-  retyped from memory.
-- Do not commit a student's contact details, thesis draft, or photo
-  without their explicit consent.
-
-## Deploying
-
-The repository is **public** and GitHub Pages is **enabled** (Source: GitHub
-Actions). The URL is https://migariane.github.io/CausalityMluquefeLab/.
-
-**Current blocker:** the deploy workflow fails immediately with
-`The job was not started because your account is locked due to a billing
-issue.` This is account-level, not repo-level — the site will publish as soon
-as the GitHub billing issue is resolved, with no further repo change.
-
-To publish:
-
-1. Resolve the billing lock on the `migariane` account.
-2. Push to `main` (or re-run the workflow). `.github/workflows/publish.yml`
-   renders both languages and deploys.
-
-The workflow runs `./build.sh`, which also produces the Spanish version and
-validates that both entry points exist and link to each other.
-
-Note that GitHub Pages for a private repository requires GitHub Pro; on a
-free plan the repository must be public to publish.
-
-Do **not** reuse the parent repo's remotes. In particular the
-`bioestadistica-fisioterapia` remote is deliberately push-blocked, and a
-push from here would not merge — it would overwrite that course's history.
+Los diagramas de investigación son ilustraciones conceptuales y no representan resultados empíricos.

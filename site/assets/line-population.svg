@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" role="img">
+  <title>Population health</title>
+  <style>
+    .progress, .comparison-reveal { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .base { opacity: 0; }
+      .progress { stroke-dasharray: 100; stroke-dashoffset: 100; animation: reveal 9s ease-in-out infinite; }
+      .comparison { opacity: 0; }
+      .comparison-reveal { animation: compare 9s linear infinite; }
+      .reveal-mask { transform-origin: 0 0; animation: unmask 9s linear infinite; }
+      @keyframes unmask { 0%, 15% { transform: scaleX(0); } 75%, 100% { transform: scaleX(1); } }
+      @keyframes reveal { 0%, 5% { stroke-dashoffset: 100; opacity: 0; } 12% { opacity: 1; } 58%, 76% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+      @keyframes compare { 0%, 15% { opacity: 0; } 20%, 82% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    }
+  </style>
+  <defs><clipPath id="comparison-clip"><rect class="reveal-mask" x="0" y="0" width="300" height="150"/></clipPath></defs>
+  <g fill="none" stroke="#234f78" stroke-width="1.5">
+    <path d="M27 22V131H278" opacity=".2"/>
+    <path class="base" d="M30 28H75V42H113V57H148V65H182V89H231V107H270" stroke-width="2"/>
+    <path class="comparison" d="M30 28H60V50H89V73H138V93H166V111H204V123H270" stroke="#779ec4" stroke-width="2" stroke-dasharray="5 5"/>
+    <path d="M30 28H75V42H113V57H148V65H182V89H231V107H270V122H231V108H182V84H148V77H113V62H75V48H30Z" fill="#dae8f5" fill-opacity=".45" stroke="none"/>
+  </g>
+  <path class="comparison-reveal" clip-path="url(#comparison-clip)" d="M30 28H60V50H89V73H138V93H166V111H204V123H270" fill="none" stroke="#779ec4" stroke-width="2" stroke-dasharray="5 5"/>
+  <path class="progress" d="M30 28H75V42H113V57H148V65H182V89H231V107H270" pathLength="100" fill="none" stroke="#4b90c4" stroke-width="3"/>
+</svg>

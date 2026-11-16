@@ -1,0 +1,55 @@
+name: Validate and publish CausalityLab
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Build and verify the website
+        run: python3 scripts/build.py
+      - name: Upload website
+        if: github.event_name != 'pull_request' && github.event.repository.private == false
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_site
+      - name: Save private review build
+        if: github.event_name != 'pull_request' && github.event.repository.private == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-review
+          path: site/_site
+          retention-days: 7
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.event.repository.private == false
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4

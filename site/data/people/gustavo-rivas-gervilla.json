@@ -1,0 +1,35 @@
+{
+  "slug": "gustavo-rivas-gervilla",
+  "photo": "people/gustavo-rivas-gervilla-cutout.svg",
+  "home_photo": "people/gustavo-rivas-gervilla-cutout.svg",
+  "links": {},
+  "languages": {
+    "en": {
+      "name": "Gustavo Rivas Gervilla",
+      "role": "PhD researcher",
+      "home_role": "PhD student",
+      "appointments": [],
+      "bio": [
+        "His doctoral research addresses treatment effects with multiple treatment levels in the potential outcomes framework. He co-authored <a href=\"https://github.com/migariane/tmleMulti\">tmleMulti</a> with his supervisor, Miguel Ángel Luque Fernández, at the University of Granada."
+      ],
+      "research_areas": [
+        "complex-treatments"
+      ]
+    },
+    "es": {
+      "name": "Gustavo Rivas Gervilla",
+      "role": "Investigador doctoral",
+      "home_role": "Estudiante de doctorado",
+      "appointments": [],
+      "bio": [
+        "Su investigación doctoral aborda la estimación de efectos de tratamientos con múltiples niveles en el marco de resultados potenciales. Es coautor de <a href=\"https://github.com/migariane/tmleMulti\">tmleMulti</a> junto con Miguel Ángel Luque Fernández, su supervisor en la Universidad de Granada."
+      ],
+      "research_areas": [
+        "complex-treatments"
+      ]
+    }
+  },
+  "order": 3,
+  "given_name": "Gustavo",
+  "family_name": "Rivas Gervilla"
+}
