@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" role="img">
+  <title>Complex treatments</title>
+  <style>
+    .route, .halo { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .base { opacity: 0; }
+      .node { transform-box: fill-box; transform-origin: center; animation: nodePulse 4.5s ease-in-out infinite; }
+      .node:nth-child(2n) { animation-delay: -1.4s; }
+      .node:nth-child(3n) { animation-delay: -2.8s; }
+      @keyframes nodePulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+      .route { stroke-dasharray: 100; stroke-dashoffset: 100; animation: branch 9s ease-in-out infinite; }
+      .route.trunk { animation-name: trunk; }
+      .route.middle { animation-name: branchMiddle; }
+      .route.lower { animation-name: branchLower; }
+      .halo { transform-box: fill-box; transform-origin: center; animation: glow 9s ease-out infinite; }
+      .halo.middle { animation-delay: .6s; } .halo.lower { animation-delay: 1.2s; }
+      @keyframes trunk { 0% { stroke-dashoffset: 100; opacity: 0; } 5% { opacity: 1; } 16%, 83% { stroke-dashoffset: 0; opacity: 1; } 96%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+      @keyframes branch { 0%, 13% { stroke-dashoffset: 100; opacity: 0; } 17% { opacity: 1; } 48%, 83% { stroke-dashoffset: 0; opacity: 1; } 96%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+      @keyframes branchMiddle { 0%, 20% { stroke-dashoffset: 100; opacity: 0; } 24% { opacity: 1; } 55%, 83% { stroke-dashoffset: 0; opacity: 1; } 96%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+      @keyframes branchLower { 0%, 27% { stroke-dashoffset: 100; opacity: 0; } 31% { opacity: 1; } 62%, 83% { stroke-dashoffset: 0; opacity: 1; } 96%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+      @keyframes glow { 0%, 22%, 100% { transform: scale(.75); opacity: 0; } 38% { opacity: .65; } 62% { transform: scale(1.45); opacity: 0; } }
+    }
+  </style>
+  <path class="base" d="M49 75H111M111 75 183 31 254 75M111 75H254M111 75 183 119 254 75" fill="none" stroke="#234f78" stroke-width="1.5"/>
+  <g fill="none" stroke="#5c9fcc" stroke-width="3" stroke-linecap="round">
+    <path class="route trunk" pathLength="100" d="M49 75H111"/>
+    <path class="route" pathLength="100" d="M111 75 183 31 254 75"/>
+    <path class="route middle" pathLength="100" d="M111 75H254"/>
+    <path class="route lower" pathLength="100" d="M111 75 183 119 254 75"/>
+  </g>
+  <g fill="none" stroke="#5c9fcc" stroke-width="2"><circle class="halo" cx="183" cy="31" r="13"/><circle class="halo middle" cx="183" cy="75" r="13"/><circle class="halo lower" cx="183" cy="119" r="13"/></g>
+  <g stroke="#234f78" stroke-width="1.5"><circle class="node" cx="49" cy="75" r="14" fill="#dce8f4"/><circle class="node" cx="111" cy="75" r="5" fill="#234f78"/><circle class="node" cx="183" cy="31" r="10" fill="#dce8f4"/><circle class="node" cx="183" cy="75" r="10" fill="#a8c5e0"/><circle class="node" cx="183" cy="119" r="10" fill="#6896c2"/><circle class="node" cx="254" cy="75" r="15" fill="#234f78"/></g>
+</svg>

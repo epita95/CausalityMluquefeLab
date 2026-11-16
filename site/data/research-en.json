@@ -1,0 +1,30 @@
+{
+  "complex-treatments": {
+    "image": "line-complex.svg",
+    "label": "Complex treatments",
+    "summary": "Causal questions that go beyond two treatment options.",
+    "title": "Causal estimation with complex exposures",
+    "body": "<p>Methods for estimating causal effects of treatments with multiple levels or complex exposures within the potential outcomes framework. We combine doubly robust estimation, cross-fitting and influence-function-based inference, including when nuisance models are estimated with machine learning. The <a href=\"__HOME__#software\">Software</a> section includes the <code>tmleMulti</code> implementation.</p>"
+  },
+  "targeted-learning": {
+    "image": "line-targeted.svg",
+    "label": "Targeted learning",
+    "summary": "Connecting flexible statistical learning with causal estimation.",
+    "title": "Targeted learning &amp; semiparametric efficiency",
+    "body": "<p>Methods that combine statistical learning with causal estimation, including targeted maximum likelihood estimation (TMLE) and doubly robust approaches. Semiparametric efficiency theory, influence functions and the delta method provide a basis for inference and variance estimation.</p>"
+  },
+  "conformal-inference": {
+    "image": "line-conformal.svg",
+    "label": "Conformal inference",
+    "summary": "Exploring uncertainty at the intersection of prediction and causality.",
+    "title": "Conformal inference for causal questions",
+    "body": "<p>Conformal methods for quantifying uncertainty in causal estimands, including settings that use machine learning or have small samples. We investigate the assumptions and conditions under which finite-sample coverage can be guaranteed.</p>"
+  },
+  "population-health": {
+    "image": "line-population.svg",
+    "label": "Population health",
+    "summary": "Epidemiological methods for health outcomes and inequalities.",
+    "title": "Computational epidemiology &amp; inequalities in cancer",
+    "body": "<p>Applications of causal inference and computational epidemiology to population health. Topics include socioeconomic inequalities in cancer outcomes, emergency presentation and cancer survival, and reproducible, data-adaptive estimation.</p>"
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" role="img">
+  <title>Conformal inference</title>
+  <desc>Fixed observations with a line gradually adjusting into a smooth curve and an evolving uncertainty band.</desc>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .curve { animation: fit 16s ease-in-out infinite; }
+      .band { animation: uncertainty 16s ease-in-out infinite; }
+      @keyframes fit {
+        0%, 13%, 100% { d: path("M26 134 C38 130 50 126 62 122 C74 118 84 114 96 110 C112 105 126 100 140 95 C154 90 168 86 181 82 C196 77 211 72 226 67 C240 62 254 57 268 52"); }
+        62%, 85% { d: path("M26 134 C40 126 53 118 62 113 C76 105 86 96 96 89 C112 77 123 69 140 68 C156 67 168 81 181 81 C201 81 202 61 226 60 C244 60 255 56 268 53"); }
+      }
+      @keyframes uncertainty {
+        0%, 13%, 100% { d: path("M26 117 C38 113 50 110 62 107 C74 104 84 99 96 95 C112 90 126 84 140 79 C154 73 168 68 181 64 C196 58 211 52 226 47 C240 42 254 36 268 29 L268 75 C254 80 240 84 226 87 C211 91 196 95 181 100 C168 104 154 107 140 111 C126 116 112 120 96 125 C84 129 74 132 62 137 C50 142 38 147 26 151 Z"); }
+        62%, 85% { d: path("M26 120 C40 112 53 104 62 99 C76 92 86 81 96 72 C112 60 123 50 140 48 C156 47 168 56 181 58 C201 58 202 37 226 36 C244 37 255 30 268 27 L268 79 C255 82 244 83 226 84 C202 85 201 105 181 104 C168 103 156 87 140 88 C123 89 112 94 96 106 C86 113 76 118 62 127 C53 132 40 140 26 148 Z"); }
+      }
+    }
+  </style>
+  <defs><clipPath id="plot"><rect x="26" y="20" width="252" height="121"/></clipPath></defs>
+  <path d="M26 20V141H278" fill="none" stroke="#234f78" stroke-width="1.5" opacity=".2"/>
+  <g clip-path="url(#plot)">
+    <path class="band" d="M26 120 C40 112 53 104 62 99 C76 92 86 81 96 72 C112 60 123 50 140 48 C156 47 168 56 181 58 C201 58 202 37 226 36 C244 37 255 30 268 27 L268 79 C255 82 244 83 226 84 C202 85 201 105 181 104 C168 103 156 87 140 88 C123 89 112 94 96 106 C86 113 76 118 62 127 C53 132 40 140 26 148 Z" fill="#c4dcee" fill-opacity=".5"/>
+    <path class="curve" d="M26 134 C40 126 53 118 62 113 C76 105 86 96 96 89 C112 77 123 69 140 68 C156 67 168 81 181 81 C201 81 202 61 226 60 C244 60 255 56 268 53" fill="none" stroke="#234f78" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g fill="#234f78"><circle cx="44" cy="125" r="3"/><circle cx="61" cy="110" r="3"/><circle cx="82" cy="112" r="3"/><circle cx="106" cy="73" r="3"/><circle cx="130" cy="47" r="3"/><circle cx="153" cy="65" r="3"/><circle cx="179" cy="104" r="3"/><circle cx="204" cy="52" r="3"/><circle cx="225" cy="139" r="3"/><circle cx="247" cy="52" r="3"/><circle cx="268" cy="46" r="3"/></g>
+</svg>

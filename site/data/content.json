@@ -1,0 +1,672 @@
+{
+  "people": [
+    {
+      "id": "miguel-luque",
+      "name": "Miguel Ángel Luque Fernández",
+      "initials": "ML",
+      "role": {
+        "es": "Director del grupo",
+        "en": "Group lead"
+      },
+      "area": {
+        "es": "Inferencia causal · Bioestadística",
+        "en": "Causal inference · Biostatistics"
+      },
+      "bio": {
+        "es": "Su investigación conecta los métodos epidemiológicos, la inferencia causal y las desigualdades en salud. Profesor de Bioestadística en la Universidad de Granada, dirige el grupo y sus proyectos de investigación doctoral.",
+        "en": "His research connects epidemiological methods, causal inference and health inequalities. A biostatistics professor at the University of Granada, he leads the group and its doctoral research projects."
+      },
+      "research_ids": [
+        "complex-treatments",
+        "targeted-learning",
+        "conformal-inference",
+        "population-health"
+      ],
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0001-6683-5164"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.es/citations?user=lA11XToAAAAJ&hl"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/migariane"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:mluquefe@ugr.es"
+        }
+      ]
+    },
+    {
+      "id": "eliezer-pita",
+      "name": "Eliezer Pita",
+      "initials": "EP",
+      "role": {
+        "es": "Investigador doctoral",
+        "en": "PhD researcher"
+      },
+      "area": {
+        "es": "Inferencia causal · Inferencia conforme",
+        "en": "Causal inference · Conformal inference"
+      },
+      "bio": {
+        "es": "Investiga la inferencia conforme aplicada a preguntas causales. Su proyecto doctoral explora métodos para cuantificar la incertidumbre y su relación con el aprendizaje estadístico, bajo la supervisión de Miguel Ángel Luque Fernández en la Universidad de Granada.",
+        "en": "His doctoral research explores conformal inference for causal questions, focusing on uncertainty quantification and its relationship with statistical learning. He is supervised by Miguel Ángel Luque Fernández at the University of Granada."
+      },
+      "research_ids": [
+        "conformal-inference"
+      ],
+      "links": []
+    },
+    {
+      "id": "gustavo-rivas-gervilla",
+      "name": "Gustavo Rivas Gervilla",
+      "initials": "GR",
+      "role": {
+        "es": "Investigador doctoral",
+        "en": "PhD researcher"
+      },
+      "area": {
+        "es": "Tratamientos múltiples · TMLE",
+        "en": "Multiple treatments · TMLE"
+      },
+      "bio": {
+        "es": "Su investigación doctoral aborda la estimación de efectos de tratamientos con múltiples niveles en el marco de resultados potenciales. Es coautor de tmleMulti junto con Miguel Ángel Luque Fernández, su supervisor en la Universidad de Granada.",
+        "en": "His doctoral research addresses treatment effects with multiple treatment levels in the potential outcomes framework. He co-authored tmleMulti with his supervisor, Miguel Ángel Luque Fernández, at the University of Granada."
+      },
+      "research_ids": [
+        "complex-treatments"
+      ],
+      "links": [
+        {
+          "label": "tmleMulti",
+          "url": "https://github.com/migariane/tmleMulti"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "id": "complex-treatments",
+      "number": "01",
+      "title": {
+        "es": "Tratamientos complejos",
+        "en": "Complex treatments"
+      },
+      "short": {
+        "es": "Preguntas causales que van más allá de dos opciones de tratamiento.",
+        "en": "Causal questions that go beyond two treatment options."
+      },
+      "description": {
+        "es": "Estudiamos cómo estimar efectos cuando una exposición o un tratamiento tiene varios niveles. Combinamos el marco de resultados potenciales con la estimación doblemente robusta y el aprendizaje estadístico. El paquete tmleMulti forma parte de este trabajo.",
+        "en": "We study how to estimate effects when an exposure or treatment has multiple levels. We combine the potential outcomes framework with doubly robust estimation and statistical learning. The tmleMulti package is part of this work."
+      },
+      "tags": [
+        "TMLE",
+        "Potential outcomes",
+        "Cross-fitting"
+      ],
+      "people_ids": [
+        "miguel-luque",
+        "gustavo-rivas-gervilla"
+      ],
+      "asset": "line-complex.svg",
+      "links": [
+        {
+          "label": "tmleMulti · GitHub",
+          "url": "https://github.com/migariane/tmleMulti"
+        },
+        {
+          "label": "tmleMulti · Docs",
+          "url": "https://migariane.github.io/tmleMulti"
+        }
+      ]
+    },
+    {
+      "id": "targeted-learning",
+      "number": "02",
+      "title": {
+        "es": "Aprendizaje dirigido",
+        "en": "Targeted learning"
+      },
+      "short": {
+        "es": "Métodos que conectan flexibilidad estadística y estimación causal.",
+        "en": "Connecting flexible statistical learning with causal estimation."
+      },
+      "description": {
+        "es": "Investigamos la estimación dirigida de máxima verosimilitud y los métodos doblemente robustos. La eficiencia semiparamétrica, las funciones de influencia y el método delta proporcionan herramientas para estudiar estos estimadores y su incertidumbre.",
+        "en": "We investigate targeted maximum likelihood estimation and doubly robust methods. Semiparametric efficiency, influence functions and the delta method provide tools to study these estimators and their uncertainty."
+      },
+      "tags": [
+        "TMLE",
+        "Influence functions",
+        "Semiparametric inference"
+      ],
+      "people_ids": [
+        "miguel-luque"
+      ],
+      "asset": "line-targeted.svg",
+      "links": [
+        {
+          "label": "TMLE · R",
+          "url": "https://migariane.github.io/TMLE.nb.html"
+        },
+        {
+          "label": "Delta Method",
+          "url": "https://migariane.github.io/DeltaMethodEpiTutorial.nb.html"
+        }
+      ]
+    },
+    {
+      "id": "conformal-inference",
+      "number": "03",
+      "title": {
+        "es": "Inferencia conforme",
+        "en": "Conformal inference"
+      },
+      "short": {
+        "es": "Explorar la incertidumbre en la intersección de predicción y causalidad.",
+        "en": "Exploring uncertainty at the intersection of prediction and causality."
+      },
+      "description": {
+        "es": "Exploramos métodos conformes y su aplicación a preguntas causales. El interés está en la cuantificación de la incertidumbre cuando se emplean modelos flexibles, atendiendo a los supuestos y a las condiciones necesarias para cada garantía de cobertura.",
+        "en": "We explore conformal methods and their application to causal questions. Our focus is uncertainty quantification with flexible models, with attention to the assumptions and conditions required for each coverage guarantee."
+      },
+      "tags": [
+        "Conformal prediction",
+        "Uncertainty",
+        "Machine learning"
+      ],
+      "people_ids": [
+        "miguel-luque",
+        "eliezer-pita"
+      ],
+      "asset": "line-conformal.svg",
+      "links": [
+        {
+          "label": "Guide · EN",
+          "url": "https://migariane.github.io/ConformalInferenceExplained.html"
+        },
+        {
+          "label": "Slides · ES",
+          "url": "https://migariane.github.io/ConformalPrediction_Tutorial_ES.html"
+        }
+      ]
+    },
+    {
+      "id": "population-health",
+      "number": "04",
+      "title": {
+        "es": "Salud poblacional",
+        "en": "Population health"
+      },
+      "short": {
+        "es": "Métodos epidemiológicos para estudiar desigualdades y resultados en salud.",
+        "en": "Epidemiological methods for health outcomes and inequalities."
+      },
+      "description": {
+        "es": "Aplicamos métodos causales a preguntas de salud poblacional, con especial interés en las desigualdades socioeconómicas en cáncer. Estudiamos la supervivencia y la presentación por urgencias mediante métodos computacionales reproducibles.",
+        "en": "We apply causal methods to population health questions, with a particular interest in socioeconomic inequalities in cancer. We study survival and emergency presentation using reproducible computational methods."
+      },
+      "tags": [
+        "Cancer epidemiology",
+        "Health inequalities",
+        "Survival"
+      ],
+      "people_ids": [
+        "miguel-luque"
+      ],
+      "asset": "line-population.svg",
+      "links": [
+        {
+          "label": "RENTA · Shiny",
+          "url": "https://watzile.shinyapps.io/RENTA/"
+        },
+        {
+          "label": "Survival analysis",
+          "url": "https://migariane.github.io/Tutorial-SVA-ULB.html"
+        }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub-16",
+      "year": 2026,
+      "title": "Super Learner: A Practical Tutorial",
+      "authors": "Pita Zambrano, E., & Luque-Fernández, M. Á.",
+      "type": "preprint",
+      "venue": "arXiv:2611.15257",
+      "url": "https://arxiv.org/abs/2611.15257"
+    },
+    {
+      "id": "pub-1",
+      "year": 2026,
+      "title": "Conformalized Super Learner",
+      "authors": "Wu, Z., Leisen, F., Luque-Fernández, M. Á., & Rubio, F. J.",
+      "type": "preprint",
+      "venue": "arXiv:2604.22391",
+      "url": "https://doi.org/10.48550/arXiv.2604.22391"
+    },
+    {
+      "id": "pub-15",
+      "year": 2026,
+      "title": "Computational Causal Inference for Applied Researchers: A Practical Guide for Epidemiologists and Biostatisticians",
+      "authors": "Luque-Fernandez, M. A., & Smith, M. J.",
+      "type": "book",
+      "venue": "Universidad de Granada",
+      "url": "https://doi.org/10.5281/zenodo.20677995"
+    },
+    {
+      "id": "pub-2",
+      "year": 2025,
+      "title": "Performance of Cross-Validated Targeted Maximum Likelihood Estimation",
+      "authors": "Smith, M. J., Phillips, R. V., Maringe, C., & Luque-Fernández, M. Á.",
+      "type": "article",
+      "venue": "Statistics in Medicine, 44(15–17), e70185",
+      "url": "https://doi.org/10.1002/sim.70185"
+    },
+    {
+      "id": "pub-3",
+      "year": 2025,
+      "title": "Is Checking for Sequential Positivity Violations Getting You Down? Try sPoRT!",
+      "authors": "Chatton, A., Schomaker, M., Luque-Fernández, M. Á., Platt, R. W., & Schnitzer, M. E.",
+      "type": "article",
+      "venue": "Epidemiology, 36(6), 751",
+      "url": "https://doi.org/10.1097/EDE.0000000000001902"
+    },
+    {
+      "id": "pub-4",
+      "year": 2025,
+      "title": "Guidelines and Best Practices for the Use of Targeted Maximum Likelihood and Machine Learning When Estimating Causal Effects of Exposures on Time-To-Event Outcomes",
+      "authors": "Talbot, D., Diop, A., Mésidor, M., Chiu, Y. M., Sirois, C., Spieker, A. J., … Luque-Fernández, M. Á.",
+      "type": "article",
+      "venue": "Statistics in Medicine, 44(6), e70034",
+      "url": "https://doi.org/10.1002/sim.70034"
+    },
+    {
+      "id": "pub-5",
+      "year": 2024,
+      "title": "Inequalities in treatment among patients with colon and rectal cancer: a multistate survival model using data from England national cancer registry 2012–2016",
+      "authors": "Ling, S., Luque-Fernández, M. Á., Quaresma, M., Belot, A., & Rachet, B.",
+      "type": "article",
+      "venue": "British Journal of Cancer, 130(1), 88–98",
+      "url": "https://doi.org/10.1038/s41416-023-02440-6"
+    },
+    {
+      "id": "pub-6",
+      "year": 2023,
+      "title": "Application of targeted maximum likelihood estimation in public health and epidemiological studies: a systematic review",
+      "authors": "Smith, M. J., Phillips, R. V., Luque-Fernández, M. Á., & Maringe, C.",
+      "type": "article",
+      "venue": "Annals of Epidemiology, 86, 34–48.e28",
+      "url": "https://doi.org/10.1016/j.annepidem.2023.06.004"
+    },
+    {
+      "id": "pub-7",
+      "year": 2022,
+      "title": "The Delta-Method and Influence Function in Medical Statistics: a Reproducible Tutorial",
+      "authors": "",
+      "type": "tutorial",
+      "venue": "(2022)",
+      "url": "https://maluque.netlify.app/publication/dmif/"
+    },
+    {
+      "id": "pub-8",
+      "year": 2020,
+      "title": "Tutorial: computational causal inference for applied researchers",
+      "authors": "",
+      "type": "preprint",
+      "venue": "(2020). arXiv:2012.09920",
+      "url": "https://arxiv.org/abs/2012.09920"
+    },
+    {
+      "id": "pub-9",
+      "year": 2019,
+      "title": "Using longitudinal targeted maximum likelihood estimation in complex settings with dynamic interventions",
+      "authors": "",
+      "type": "article",
+      "venue": "(2019)",
+      "url": "https://maluque.netlify.app/publication/ltmle/"
+    },
+    {
+      "id": "pub-10",
+      "year": 2019,
+      "title": "Effect Modification and Collapsibility in Evaluations of Public Health Interventions",
+      "authors": "",
+      "type": "article",
+      "venue": "(2019)",
+      "url": "https://maluque.netlify.app/publication/effmod/"
+    },
+    {
+      "id": "pub-11",
+      "year": 2018,
+      "title": "Educational Note: Paradoxical collider effect in the analysis of non-communicable disease epidemiological data: a reproducible illustration and web application",
+      "authors": "",
+      "type": "article",
+      "venue": "(2018)",
+      "url": "https://maluque.netlify.app/publication/collider/"
+    },
+    {
+      "id": "pub-12",
+      "year": 2018,
+      "title": "Targeted Maximum Likelihood Estimation: A tutorial",
+      "authors": "",
+      "type": "tutorial",
+      "venue": "(2018). Statistics in Medicine",
+      "url": "https://maluque.netlify.app/publication/sim/"
+    },
+    {
+      "id": "pub-13",
+      "year": 2017,
+      "title": "Data-Adaptive Estimation for Double-Robust Methods in Population-Based Cancer Epidemiology: Risk differences for lung cancer mortality by emergency presentation",
+      "authors": "",
+      "type": "article",
+      "venue": "(2017)",
+      "url": "https://maluque.netlify.app/publication/tmle/"
+    },
+    {
+      "id": "pub-14",
+      "year": 2016,
+      "title": "Deconstructing the smoking-preeclampsia paradox through a counterfactual framework",
+      "authors": "",
+      "type": "article",
+      "venue": "(2016)",
+      "url": "https://maluque.netlify.app/publication/psp/"
+    }
+  ],
+  "software": [
+    {
+      "id": "tmlemulti",
+      "name": "tmleMulti",
+      "kind": "R",
+      "description": {
+        "es": "Estimación causal para tratamientos con múltiples niveles.",
+        "en": "Causal estimation for treatments with multiple levels."
+      },
+      "url": "https://github.com/migariane/tmleMulti",
+      "docs_url": "https://migariane.github.io/tmleMulti"
+    },
+    {
+      "id": "bioestatr",
+      "name": "BioEstatR",
+      "kind": "R",
+      "description": {
+        "es": "Herramientas de bioestadística para las ciencias de la salud.",
+        "en": "Biostatistics tools for the health sciences."
+      },
+      "url": "https://migariane.github.io/BioEstatR/"
+    },
+    {
+      "id": "eltmle",
+      "name": "eltmle",
+      "kind": "Stata",
+      "description": {
+        "es": "Estimación dirigida del efecto medio del tratamiento con Super Learner.",
+        "en": "Targeted estimation of the average treatment effect with Super Learner."
+      },
+      "url": "https://github.com/migariane/meltmle"
+    },
+    {
+      "id": "cvauroc",
+      "name": "cvAUROC",
+      "kind": "Stata",
+      "description": {
+        "es": "Área bajo la curva ROC con validación cruzada.",
+        "en": "Cross-validated area under the ROC curve."
+      },
+      "url": "https://github.com/migariane/cvAUROC"
+    },
+    {
+      "id": "cmatch",
+      "name": "cmatch",
+      "kind": "Stata",
+      "description": {
+        "es": "Tabulación de pares en estudios de casos y controles emparejados.",
+        "en": "Matched-pair tabulation for case-control studies."
+      },
+      "url": "https://github.com/migariane/cmatch"
+    },
+    {
+      "id": "renta",
+      "name": "RENTA",
+      "kind": "Shiny",
+      "description": {
+        "es": "Mapa de renta y variables sociodemográficas en Andalucía.",
+        "en": "Income and sociodemographic mapping in Andalusia."
+      },
+      "url": "https://watzile.shinyapps.io/RENTA/"
+    },
+    {
+      "id": "delivery",
+      "name": "Expected Date of Delivery",
+      "kind": "Shiny",
+      "description": {
+        "es": "Estimación de la fecha de parto con intervalos de incertidumbre.",
+        "en": "Estimated delivery dates with uncertainty intervals."
+      },
+      "url": "https://watzile.shinyapps.io/ExpectedDateDelivery/"
+    },
+    {
+      "id": "comcor",
+      "name": "CoMCoR",
+      "kind": "Shiny",
+      "description": {
+        "es": "Exploración de patrones de comorbilidad en cáncer.",
+        "en": "Exploring patterns of comorbidity in cancer."
+      },
+      "url": "https://watzile.shinyapps.io/CoMCoR/"
+    },
+    {
+      "id": "pardist",
+      "name": "Parametric Distributions",
+      "kind": "Shiny",
+      "description": {
+        "es": "Exploración de distribuciones de supervivencia.",
+        "en": "Exploring survival distributions."
+      },
+      "url": "https://watzile.shinyapps.io/Pardist/"
+    },
+    {
+      "id": "collider",
+      "name": "Colliders in Epidemiology",
+      "kind": "Shiny",
+      "description": {
+        "es": "Una aproximación visual al sesgo de colisionador.",
+        "en": "A visual introduction to collider bias."
+      },
+      "url": "https://watzile.shinyapps.io/EpiCollider/"
+    },
+    {
+      "id": "clt",
+      "name": "Central Limit Theorem",
+      "kind": "Shiny",
+      "description": {
+        "es": "Explora el teorema central del límite mediante simulaciones.",
+        "en": "Explore the central limit theorem through simulations."
+      },
+      "url": "https://watzile.shinyapps.io/TeoreCLT/"
+    },
+    {
+      "id": "intervals",
+      "name": "Confidence Intervals",
+      "kind": "Shiny",
+      "description": {
+        "es": "Explora cómo cambian los intervalos de confianza.",
+        "en": "Explore how confidence intervals change."
+      },
+      "url": "https://watzile.shinyapps.io/IntervalosConfianza/"
+    }
+  ],
+  "resources": [
+    {
+      "id": "causal-book",
+      "title": "Computational Causal Inference for Applied Researchers",
+      "kind": "book",
+      "language": "EN",
+      "description": {
+        "es": "Una guía práctica de métodos causales con ejemplos en R y Stata.",
+        "en": "A practical guide to causal methods with examples in R and Stata."
+      },
+      "url": "https://migariane.github.io/Causal-Inference-Book/"
+    },
+    {
+      "id": "maths-book",
+      "title": "Matemática Estadística Médica con R",
+      "kind": "book",
+      "language": "ES",
+      "description": {
+        "es": "Fundamentos de estadística para las ciencias de la salud.",
+        "en": "Foundations of statistics for the health sciences."
+      },
+      "url": "https://github.com/migariane/MatematicaEstadisticaMedicinaR"
+    },
+    {
+      "id": "biostat-book",
+      "title": "Bioestadística Aplicada",
+      "kind": "book",
+      "language": "ES",
+      "description": {
+        "es": "Materiales de métodos avanzados en bioestadística.",
+        "en": "Materials on advanced methods in biostatistics."
+      },
+      "url": "https://migariane.github.io/Bioestadistica/"
+    },
+    {
+      "id": "survival-course",
+      "title": "Introduction to Survival Analysis in Cancer Epidemiology",
+      "kind": "course",
+      "language": "EN",
+      "description": {
+        "es": "Métodos de supervivencia aplicados a epidemiología del cáncer.",
+        "en": "Survival methods applied to cancer epidemiology."
+      },
+      "url": "https://github.com/migariane/SVA-ULB"
+    },
+    {
+      "id": "causal-course",
+      "title": "Introduction to Causal Inference",
+      "kind": "course",
+      "language": "EN",
+      "description": {
+        "es": "Introducción a la inferencia causal y los resultados potenciales.",
+        "en": "An introduction to causal inference and potential outcomes."
+      },
+      "url": "https://ccci.netlify.app/"
+    },
+    {
+      "id": "tmle-r",
+      "title": "Targeted Maximum Likelihood Estimation",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "TMLE en R.",
+        "en": "TMLE in R."
+      },
+      "url": "https://migariane.github.io/TMLE.nb.html"
+    },
+    {
+      "id": "causal-stata",
+      "title": "Applied Computational Causal Inference",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Inferencia causal con Stata.",
+        "en": "Causal inference with Stata."
+      },
+      "url": "https://migariane.github.io/CIM.html"
+    },
+    {
+      "id": "maths-tmle",
+      "title": "Las matemáticas detrás de TMLE",
+      "kind": "tutorial",
+      "language": "ES",
+      "description": {
+        "es": "Funciones de influencia y fundamentos de TMLE.",
+        "en": "Influence functions and foundations of TMLE."
+      },
+      "url": "https://migariane.github.io/Maths_TMLE-IF.html"
+    },
+    {
+      "id": "delta",
+      "title": "Delta Method Tutorial",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Un tutorial sobre el método delta.",
+        "en": "A tutorial on the delta method."
+      },
+      "url": "https://migariane.github.io/DeltaMethodEpiTutorial.nb.html"
+    },
+    {
+      "id": "conformal-guide",
+      "title": "Conformal Statistical Inference",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Una guía de inferencia conforme.",
+        "en": "A guide to conformal inference."
+      },
+      "url": "https://migariane.github.io/ConformalInferenceExplained.html"
+    },
+    {
+      "id": "conformal-slides",
+      "title": "Inferencia conforme · Seminario",
+      "kind": "talk",
+      "language": "ES",
+      "description": {
+        "es": "Diapositivas del seminario de inferencia conforme.",
+        "en": "Slides from the conformal inference seminar."
+      },
+      "url": "https://migariane.github.io/ConformalPrediction_Tutorial_ES.html"
+    },
+    {
+      "id": "survival",
+      "title": "Introduction to Time-to-Event Analysis",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Fundamentos del análisis de supervivencia.",
+        "en": "Foundations of survival analysis."
+      },
+      "url": "https://migariane.github.io/Tutorial-SVA-ULB.html"
+    },
+    {
+      "id": "sl",
+      "title": "SuperLearner for Epidemiologists",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Aprendizaje de conjuntos para epidemiología.",
+        "en": "Ensemble learning for epidemiology."
+      },
+      "url": "https://migariane.github.io/SL-Tutorial/SuperLearner_Tutorial.html"
+    },
+    {
+      "id": "cv",
+      "title": "Cross-Validation in Practice",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Validación cruzada con R.",
+        "en": "Cross-validation with R."
+      },
+      "url": "https://migariane.github.io/CrossValidation.nb.html"
+    },
+    {
+      "id": "net-survival",
+      "title": "Net Survival: Cohort Analysis",
+      "kind": "tutorial",
+      "language": "EN",
+      "description": {
+        "es": "Análisis de supervivencia neta con Stata.",
+        "en": "Net survival analysis with Stata."
+      },
+      "url": "https://migariane.github.io/Cohort.html"
+    }
+  ]
+}

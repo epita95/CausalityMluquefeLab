@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render:
+    - python3 ../scripts/render_profiles.py
+    - python3 ../scripts/render_work_links.py
+  render:
+    - "**/*.qmd"
+  resources:
+    - "assets/**/*.png"
+    - "assets/**/*.svg"
+    - styles/site.css
+    - scripts/site.js
+
+website:
+  title: "Causality Lab"
+  search: false
+
+format:
+  html:
+    theme: none
+    minimal: true
+    template: templates/page.html
+    toc: false
+    anchor-sections: false
+    html-math-method: plain
+
+execute:
+  enabled: false

@@ -1,0 +1,76 @@
+{
+  "slug": "miguel-luque",
+  "photo": "people/miguel-luque-cutout.png",
+  "home_photo": "people/miguel-luque-cutout.png",
+  "links": {
+    "orcid": "https://orcid.org/0000-0001-6683-5164",
+    "scholar": "https://scholar.google.es/citations?user=lA11XToAAAAJ&hl",
+    "github": "https://github.com/migariane",
+    "email": "mluquefe@ugr.es"
+  },
+  "languages": {
+    "en": {
+      "name": "Miguel Ángel Luque Fernández",
+      "role": "Group lead",
+      "home_role": "Group lead",
+      "appointments": [
+        {
+          "position": "Associate Professor of Biostatistics",
+          "affiliations": [
+            "Department of Statistics and Operations Research, University of Granada"
+          ]
+        },
+        {
+          "position": "Honorary Associate Professor",
+          "affiliations": [
+            "London School of Hygiene & Tropical Medicine"
+          ]
+        }
+      ],
+      "bio": [
+        "He earned his PhD in Preventive Medicine (Epidemiology) and Public Health, with <em>Summa Cum Laude</em>, from the University of Granada and the Université Libre de Bruxelles. He also holds a BSc in Mathematics and Statistics from the Open University, an MSc in Biostatistics from the University of Newcastle, an MSc in Epidemiology from the Université Libre de Bruxelles, and a Master of Public Health from the University of Granada.",
+        "Following his doctorate in 2010, he held postdoctoral fellowships at the University of Cape Town and Harvard T.H. Chan School of Public Health, specialising in epidemiological methods and causal inference. Trained as an Epidemic Intelligence Officer, he has worked in field epidemiology with Médecins Sans Frontières and WHO-GOARN in Haiti and sub-Saharan Africa.",
+        "His research lies at the intersection of causal inference, biostatistics and computational epidemiology, with a particular focus on observational data. He works on targeted learning and doubly robust estimation, as well as applications to socioeconomic inequalities and cancer survival."
+      ],
+      "research_areas": [
+        "complex-treatments",
+        "targeted-learning",
+        "conformal-inference",
+        "population-health"
+      ]
+    },
+    "es": {
+      "name": "Miguel Ángel Luque Fernández",
+      "role": "Director del grupo",
+      "home_role": "Director CausalityLab",
+      "appointments": [
+        {
+          "position": "Profesor Titular de Bioestadística",
+          "affiliations": [
+            "Departamento de Estadística e Investigación Operativa, Universidad de Granada"
+          ]
+        },
+        {
+          "position": "Profesor Asociado Honorario",
+          "affiliations": [
+            "London School of Hygiene & Tropical Medicine"
+          ]
+        }
+      ],
+      "bio": [
+        "Obtuvo el doctorado en Medicina Preventiva (Epidemiología) y Salud Pública, con <em>summa cum laude</em>, por la Universidad de Granada y la Université Libre de Bruxelles. Es licenciado en Matemáticas y Estadística por la Open University y cuenta con másteres en Bioestadística por la University of Newcastle, Epidemiología por la Université Libre de Bruxelles y Salud Pública por la Universidad de Granada.",
+        "Tras su doctorado en 2010, realizó estancias posdoctorales en la University of Cape Town y la Harvard T.H. Chan School of Public Health, especializándose en métodos epidemiológicos e inferencia causal. Formado como <em>Epidemic Intelligence Officer</em>, ha trabajado en epidemiología de campo con Médicos Sin Fronteras y WHO-GOARN en Haití y África subsahariana.",
+        "Su investigación se sitúa en la intersección de la inferencia causal, la bioestadística y la epidemiología computacional, con especial atención al análisis de datos observacionales. Trabaja en métodos de aprendizaje dirigido y estimación doblemente robusta, así como en aplicaciones a las desigualdades socioeconómicas y la supervivencia del cáncer."
+      ],
+      "research_areas": [
+        "complex-treatments",
+        "targeted-learning",
+        "conformal-inference",
+        "population-health"
+      ]
+    }
+  },
+  "order": 1,
+  "given_name": "Miguel Ángel",
+  "family_name": "Luque Fernández"
+}

@@ -1,0 +1,30 @@
+{
+  "complex-treatments": {
+    "image": "line-complex.svg",
+    "label": "Tratamientos complejos",
+    "summary": "Preguntas causales que van más allá de dos opciones de tratamiento.",
+    "title": "Estimación causal con exposiciones complejas",
+    "body": "<p>Métodos para estimar efectos causales de tratamientos con múltiples niveles o exposiciones complejas en el marco de resultados potenciales. Combinamos estimación doblemente robusta, <em>cross-fitting</em> e inferencia basada en funciones de influencia, incluso cuando los modelos auxiliares se estiman mediante aprendizaje automático. La sección de <a href=\"__HOME__#software\">Software</a> incluye la implementación <code>tmleMulti</code>.</p>"
+  },
+  "targeted-learning": {
+    "image": "line-targeted.svg",
+    "label": "Aprendizaje dirigido",
+    "summary": "Métodos que conectan flexibilidad estadística y estimación causal.",
+    "title": "Targeted learning y eficiencia semiparamétrica",
+    "body": "<p>Métodos que combinan aprendizaje estadístico y estimación causal, incluida la estimación por máxima verosimilitud dirigida (TMLE) y los enfoques doblemente robustos. La teoría de eficiencia semiparamétrica, las funciones de influencia y el método delta sirven de base para la inferencia y la estimación de varianzas.</p>"
+  },
+  "conformal-inference": {
+    "image": "line-conformal.svg",
+    "label": "Inferencia conforme",
+    "summary": "Cuantificación de la incertidumbre en predicción e inferencia causal.",
+    "title": "Inferencia conforme para preguntas causales",
+    "body": "<p>Métodos conformes para cuantificar la incertidumbre en estimandos causales, también en situaciones con aprendizaje automático o muestras pequeñas. Investigamos los supuestos y las condiciones bajo los cuales se puede garantizar la cobertura en muestras finitas.</p>"
+  },
+  "population-health": {
+    "image": "line-population.svg",
+    "label": "Salud poblacional",
+    "summary": "Métodos epidemiológicos para estudiar desigualdades y resultados en salud.",
+    "title": "Epidemiología computacional y desigualdades en cáncer",
+    "body": "<p>Aplicaciones de la inferencia causal y la epidemiología computacional a la salud poblacional. Incluye el estudio de desigualdades socioeconómicas en los resultados del cáncer, la presentación de urgencia y la supervivencia, así como métodos de estimación reproducibles y adaptativos.</p>"
+  }
+}
