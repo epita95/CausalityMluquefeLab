@@ -67,24 +67,40 @@
       "name": "Gustavo Rivas Gervilla",
       "initials": "GR",
       "role": {
-        "es": "Investigador doctoral",
-        "en": "PhD researcher"
+        "es": "Profesor ayudante doctor",
+        "en": "Assistant Professor"
       },
       "area": {
-        "es": "Tratamientos múltiples · TMLE",
-        "en": "Multiple treatments · TMLE"
+        "es": "Inferencia causal · Multicausalidad",
+        "en": "Causal inference · Multicausality"
       },
       "bio": {
-        "es": "Su investigación doctoral aborda la estimación de efectos de tratamientos con múltiples niveles en el marco de resultados potenciales. Es coautor de tmleMulti junto con Miguel Ángel Luque Fernández, su supervisor en la Universidad de Granada.",
-        "en": "His doctoral research addresses treatment effects with multiple treatment levels in the potential outcomes framework. He co-authored tmleMulti with his supervisor, Miguel Ángel Luque Fernández, at the University of Granada."
+        "es": "Es investigador en la Universidad de Granada, donde ha desarrollado toda su trayectoria académica e investigadora. Es graduado en Ingeniería Informática y en Matemáticas, y tiene los másteres en Ingeniería Informática y en Estadística Aplicada, además de haber cursado el Programa de Doctorado en Tecnologías de la Información y la Comunicación, todo ello en la Universidad de Granada.\n\nComenzó su carrera investigadora durante el doctorado en el Departamento de Ciencias de la Computación e Inteligencia Artificial (DECSAI) y actualmente es profesor ayudante doctor en el Departamento de Estadística e Investigación Operativa. Su docencia se centra en la Inferencia Estadística y la Bioestadística.\n\nSu primera línea de investigación se centra en la lógica difusa, el análisis de conceptos formales y la generación de lenguaje natural. En ella defendió su tesis doctoral sobre mecanismos formales para la representación y extracción de expresiones de referencia en sistemas data-to-text.\n\nSu nuevo proyecto doctoral se enmarca en la inferencia causal, campo en el que comenzó a trabajar junto a Miguel Ángel Luque Fernández, su director de tesis actual, durante su trabajo fin de máster en el Máster en Estadística Aplicada. El problema que aborda es el de la multicausalidad: cómo hacer inferencia sobre un efecto observado cuando varias causas, con interacciones de naturaleza y complejidad distintas, pueden combinarse para producirlo. Es un problema abierto y exigente, tanto desde la perspectiva de la formalización teórico-matemática como desde la de su aplicabilidad práctica.\n\nTrabaja con R, Python y lenguajes de alto rendimiento como C++, y actualmente aprende Rust, así como desarrollo web y móvil. Es además un gran aficionado a LaTeX, con un dominio avanzado de la herramienta.",
+        "en": "He is a researcher at the University of Granada, where he has carried out his entire academic and research career. He holds degrees in Computer Engineering and Mathematics, and Master’s degrees in Computer Engineering and in Applied Statistics, and completed the Doctoral Programme in Information and Communication Technologies, all at the University of Granada.\n\nHe began his research career during his doctoral studies at the Department of Computer Science and Artificial Intelligence (DECSAI), and he is currently an Assistant Professor in the Department of Statistics and Operations Research. His teaching focuses on Statistical Inference and Biostatistics.\n\nHis first line of research centres on fuzzy logic, formal concept analysis and natural language generation. Within this line he defended his doctoral thesis on formal mechanisms for the representation and extraction of referring expressions in data-to-text systems.\n\nHis new doctoral project lies in the field of causal inference, which he began working on with Miguel Ángel Luque Fernández, his current thesis supervisor, during his Master’s thesis in the Master’s in Applied Statistics. The problem he addresses is multicausality: how to make inference about an observed effect when several causes, interacting in ways that differ in nature and complexity, may combine to produce it. This is an open and demanding problem, both from the perspective of theoretical and mathematical formalisation and from that of practical applicability.\n\nHe works with R, Python and higher-performance languages such as C++, and is currently learning Rust as well as web and mobile development. He is also a keen LaTeX enthusiast with an advanced command of the tool."
       },
       "research_ids": [
         "complex-treatments"
       ],
       "links": [
         {
-          "label": "tmleMulti",
-          "url": "https://github.com/migariane/tmleMulti"
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-1746-9660"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.es/citations?user=320xVmwAAAAJ"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/grivasgervilla"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/gustavo-rivas-gervilla-22510a125/"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:griger@ugr.es"
         }
       ]
     }
